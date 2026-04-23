@@ -4,6 +4,7 @@ import logoImg from '../../assets/noble-logo.png'
 import heroBg from '../../assets/noble-hero-bg.jpg'
 import { trackClick } from '../../lib/analytics'
 import { WHATSAPP_URL } from '../../lib/contact'
+import { BeforeAfterFrame } from './BeforeAfterFrame'
 
 export function HeroSection() {
   return (
@@ -18,17 +19,19 @@ export function HeroSection() {
           width={1920}
           height={1080}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-noir/80 via-noir/70 to-noir" />
-        <div className="absolute inset-0 bg-gradient-to-r from-noir via-noir/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-noir/90 via-noir/80 to-noir" />
+        <div className="absolute inset-0 bg-gradient-to-r from-noir via-noir/70 to-transparent" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-3xl py-24 lg:py-32">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center min-h-screen py-24 lg:py-32">
+          
+          {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col items-start"
+            className="flex flex-col items-start max-w-3xl lg:max-w-none"
           >
             {/* Logo */}
             <img
@@ -63,7 +66,7 @@ export function HeroSection() {
             </p>
 
             {/* CTAs — "Me chama" as primary CTA */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <motion.a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -71,14 +74,14 @@ export function HeroSection() {
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={trackClick}
-                className="btn-gold text-sm sm:text-base px-8 py-4 sm:px-10 sm:py-5 rounded-full font-bold inline-block shadow-[0_15px_40px_hsl(var(--gold)/0.3)] tracking-wider uppercase text-center"
+                className="btn-gold text-sm sm:text-base px-8 py-4 sm:px-10 sm:py-5 rounded-full font-bold inline-block shadow-[0_15px_40px_hsl(var(--gold)/0.3)] tracking-wider uppercase text-center w-full sm:w-auto"
               >
                 Me Chama no WhatsApp
               </motion.a>
 
               <a
                 href="#especialidades"
-                className="btn-gold-outline text-sm sm:text-base px-8 py-4 sm:px-10 sm:py-5 rounded-full inline-block tracking-wider uppercase text-center"
+                className="btn-gold-outline text-sm sm:text-base px-8 py-4 sm:px-10 sm:py-5 rounded-full inline-block tracking-wider uppercase text-center w-full sm:w-auto"
               >
                 Conhecer a Clínica
               </a>
@@ -95,6 +98,17 @@ export function HeroSection() {
               <span>HOF</span>
             </div>
           </motion.div>
+
+          {/* Animated Before/After Frame */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto mt-12 lg:mt-0"
+          >
+            <BeforeAfterFrame />
+          </motion.div>
+          
         </div>
       </div>
 
@@ -103,7 +117,7 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 8, 0] }}
         transition={{ delay: 1.2, y: { repeat: Infinity, duration: 2 } }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-gold/60 z-10"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-gold/60 z-10 hidden sm:block"
       >
         <ChevronDown className="w-6 h-6" />
       </motion.div>

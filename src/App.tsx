@@ -7,7 +7,6 @@ import { Toaster } from './components/ui/toaster'
 
 // Lazy load below-the-fold sections
 const InstagramCarousel = lazy(() => import('./components/natalia/InstagramCarousel').then(m => ({ default: m.InstagramCarousel })))
-const TransformationSection = lazy(() => import('./components/natalia/TransformationSection').then(m => ({ default: m.TransformationSection })))
 const SpecialtiesSection = lazy(() => import('./components/natalia/SpecialtiesSection').then(m => ({ default: m.SpecialtiesSection })))
 const TeamSection = lazy(() => import('./components/natalia/TeamSection').then(m => ({ default: m.TeamSection })))
 const TrustSection = lazy(() => import('./components/natalia/TrustSection').then(m => ({ default: m.TrustSection })))
@@ -36,11 +35,6 @@ export default function App() {
         <SectionDivider />
 
         <Suspense fallback={<SectionPlaceholder />}>
-          {/* Transformation (Before/After) — right after hero for maximum impact */}
-          <section id="transformacao" aria-label="Transformação">
-            <TransformationSection />
-          </section>
-
           <section id="especialidades" aria-label="Especialidades">
             <SpecialtiesSection />
           </section>
