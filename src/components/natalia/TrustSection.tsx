@@ -49,7 +49,7 @@ export function TrustSection() {
 
             <div className="space-y-4 text-foreground/75 font-body text-base sm:text-lg leading-relaxed mb-10">
               <p>
-                Na Noble Clinic, não vendemos procedimentos. Conduzimos transformações que devolvem autoestima, liberdade para comer e a confiança de sorrir sem esconder.
+                Na Noble Clinic, não oferecemos soluções genéricas. Conduzimos transformações que devolvem autoestima, liberdade para comer e a confiança de sorrir sem esconder.
               </p>
               <p>
                 Cada caso recebe a profundidade que merece. Tecnologia de ponta, planejamento minucioso e um atendimento que reconhece o seu tempo, a sua história e o seu padrão de exigência.

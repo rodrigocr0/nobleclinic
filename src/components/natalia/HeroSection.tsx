@@ -62,7 +62,7 @@ export function HeroSection() {
 
             {/* Subheadline — Empathy + Transformation */}
             <p className="font-body text-base sm:text-lg lg:text-xl text-foreground/75 mb-10 max-w-xl leading-relaxed">
-              Se você convive há anos com próteses que não servem mais, com vergonha de sorrir ou com medo de começar — saiba que esse incômodo tem solução. E ela é definitiva.
+              Se você convive há anos com próteses que não servem mais, com vergonha de sorrir ou com medo de começar — saiba que esse incômodo tem solução definitiva. Implante é decisão de vida. Aqui você está no lugar certo.
             </p>
 
             {/* CTAs — "Me chama" as primary CTA */}

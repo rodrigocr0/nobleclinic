@@ -6,11 +6,11 @@ import { WHATSAPP_URL } from '../../lib/contact'
 const faqs = [
   {
     q: 'Implante dói? Vocês usam algum tipo de sedação?',
-    a: 'O procedimento é conduzido com anestesia local e protocolos modernos que tornam a experiência muito mais confortável do que a maioria imagina. Nossos pacientes costumam dizer que o pior foi o medo antes de começar. Em casos específicos, oferecemos sedação para garantir o seu bem-estar completo.',
+    a: 'Todo o processo é conduzido com anestesia local e protocolos modernos que tornam a experiência muito mais confortável do que a maioria imagina. As pessoas costumam dizer que o pior foi o medo antes de começar. Em casos específicos, oferecemos sedação para garantir o seu bem-estar completo.',
   },
   {
     q: 'Tenho prótese antiga há anos. Ainda posso fazer implante?',
-    a: 'Sim. A maioria dos nossos pacientes conviveu por anos com próteses que já não serviam mais antes de nos procurar. Mesmo com perda óssea, conseguimos planejar soluções seguras com técnicas avançadas. Cada caso é avaliado individualmente.',
+    a: 'Sim. A grande maioria das pessoas que nos procuram conviveu por anos com próteses que já não serviam mais. Mesmo com perda óssea, conseguimos planejar soluções seguras com técnicas avançadas. Cada caso é avaliado individualmente.',
   },
   {
     q: 'Em quanto tempo eu volto a ter dentes fixos?',

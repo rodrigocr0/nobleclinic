@@ -16,7 +16,7 @@ const posts = [
   {
     id: 1,
     image: img1,
-    caption: 'Quanto tempo demora para realizar um sonho? Essa paciente usava dentadura desde os 15 anos, hoje ela tem 52. Com implantes ósseo integrados você pode ter dentes fixos em apenas 24 horas ( 1 dia ).',
+    caption: 'Quanto tempo demora para realizar um sonho? Ela convivia com a dentadura desde os 15 anos, hoje ela tem 52. Com implantes ósseo integrados você pode ter dentes fixos em apenas 24 horas ( 1 dia ).',
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ const posts = [
   {
     id: 6,
     image: img6,
-    caption: 'Quanto tempo demora para realizar um sonho? Essa paciente usava dentadura desde os 15 anos, hoje ela tem 52. Com implantes ósseo integrados você pode ter dentes fixos em apenas 24 horas ( 1 dia ).',
+    caption: 'Quanto tempo demora para realizar um sonho? Ela convivia com a dentadura desde os 15 anos, hoje ela tem 52. Com implantes ósseo integrados você pode ter dentes fixos em apenas 24 horas ( 1 dia ).',
   },
 ]
 

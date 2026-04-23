@@ -43,7 +43,7 @@ export function ExperienceSection() {
             Um padrão que se sente <span className="text-gold italic">desde a porta de entrada</span>.
           </h2>
           <p className="font-body text-base sm:text-lg text-foreground/70 leading-relaxed">
-            Mais do que um tratamento, uma vivência completa pensada para quem está acostumado com o melhor.
+            Mais do que reabilitação oral, uma vivência completa pensada para quem está acostumado com o melhor.
           </p>
         </motion.div>
 
