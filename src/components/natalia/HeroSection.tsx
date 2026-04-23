@@ -56,13 +56,13 @@ export function HeroSection() {
 
             {/* Headline — ICP-focused: speaks to years of suffering */}
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] text-foreground mb-6">
-              Cansou de se adaptar? <br />
-              <span className="text-gold italic">Aqui começa a sua mudança.</span>
+              Vergonha ao sorrir? <br />
+              <span className="text-gold italic">Isso muda aqui.</span>
             </h1>
 
             {/* Subheadline — Empathy + Transformation */}
             <p className="font-body text-base sm:text-lg lg:text-xl text-foreground/75 mb-10 max-w-xl leading-relaxed">
-              Se você convive há anos com próteses que não servem mais, com vergonha de sorrir ou com medo de começar — saiba que esse incômodo tem solução definitiva. Implante é decisão de vida. Aqui você está no lugar certo.
+              Se você convive há anos com próteses que não servem mais, com vergonha de sorrir ou com medo de começar, saiba que esse incômodo tem solução definitiva. Implante é decisão de vida. Aqui você está no lugar certo.
             </p>
 
             {/* CTAs — "Me chama" as primary CTA */}
