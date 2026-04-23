@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal } from 'lucide-react'
-import logoImg from '../../assets/noble-logo.png'
+import logoInsta from '../../assets/carousel/logo-instagram.webp'
 
 // Import images
 import img1 from '../../assets/carousel/1.webp'
@@ -90,12 +90,12 @@ export function InstagramCarousel() {
               {/* Header */}
               <div className="p-4 flex items-center justify-between bg-white border-b border-[#efefef]">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-noir p-1 border border-gold/30">
-                    <img src={logoImg} alt="Noble Clinic" className="w-full h-full object-contain" />
+                  <div className="w-8 h-8 rounded-full bg-white p-0 border border-gold/10 overflow-hidden">
+                    <img src={logoInsta} alt="Noble Clinic" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-[#262626] leading-none">nobleclinic</h4>
-                    <p className="text-[10px] text-[#8e8e8e] mt-1 uppercase tracking-tighter font-medium">Fortaleza, Ceará</p>
+                    <p className="text-[9px] text-[#8e8e8e] mt-1.5 uppercase tracking-wider font-semibold">Noble Clinic | Odontologia Especializada</p>
                   </div>
                 </div>
                 <MoreHorizontal className="w-5 h-5 text-[#262626]" />
