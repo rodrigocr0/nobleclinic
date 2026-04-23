@@ -6,6 +6,7 @@ import { WhatsAppButton } from './components/natalia/WhatsAppButton'
 import { Toaster } from './components/ui/toaster'
 
 // Lazy load below-the-fold sections
+const InstagramCarousel = lazy(() => import('./components/natalia/InstagramCarousel').then(m => ({ default: m.InstagramCarousel })))
 const TransformationSection = lazy(() => import('./components/natalia/TransformationSection').then(m => ({ default: m.TransformationSection })))
 const SpecialtiesSection = lazy(() => import('./components/natalia/SpecialtiesSection').then(m => ({ default: m.SpecialtiesSection })))
 const TeamSection = lazy(() => import('./components/natalia/TeamSection').then(m => ({ default: m.TeamSection })))
@@ -27,6 +28,10 @@ export default function App() {
         <section id="hero" aria-label="Hero">
           <HeroSection />
         </section>
+
+        <Suspense fallback={<SectionPlaceholder />}>
+          <InstagramCarousel />
+        </Suspense>
 
         <SectionDivider />
 
