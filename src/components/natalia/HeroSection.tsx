@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Diamond, ChevronDown } from 'lucide-react'
-import logoImg from '../../assets/noble-logo.png'
+import logoImg from '../../assets/LOGO_NOBLE_webp.webp'
 import heroBg from '../../assets/noble-hero-bg.jpg'
 import { trackClick } from '../../lib/analytics'
 import { WHATSAPP_URL } from '../../lib/contact'

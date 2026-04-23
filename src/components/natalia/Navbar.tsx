@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useState, useEffect } from 'react'
-import logoImg from '../../assets/noble-logo.png'
+import logoImg from '../../assets/LOGO_NOBLE_webp.webp'
 import { trackClick } from '../../lib/analytics'
 import { WHATSAPP_URL } from '../../lib/contact'
 

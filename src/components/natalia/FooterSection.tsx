@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Instagram, MapPin, MessageSquare } from 'lucide-react'
-import logoImg from '../../assets/noble-logo.png'
+import logoImg from '../../assets/LOGO_NOBLE_webp.webp'
 import bgImage from '../../assets/noble-clinic-interior.jpg'
 import { trackClick } from '../../lib/analytics'
 import { WHATSAPP_URL, INSTAGRAM_CLINIC } from '../../lib/contact'
