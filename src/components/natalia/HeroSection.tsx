@@ -1,0 +1,112 @@
+import { motion } from 'framer-motion'
+import { Diamond, ChevronDown } from 'lucide-react'
+import logoImg from '../../assets/noble-logo.png'
+import heroBg from '../../assets/noble-hero-bg.jpg'
+import { trackClick } from '../../lib/analytics'
+import { WHATSAPP_URL } from '../../lib/contact'
+
+export function HeroSection() {
+  return (
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-noir">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroBg}
+          alt="Ambiente Noble Clinic"
+          className="w-full h-full object-cover"
+          fetchPriority="high"
+          width={1920}
+          height={1080}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-noir/80 via-noir/70 to-noir" />
+        <div className="absolute inset-0 bg-gradient-to-r from-noir via-noir/60 to-transparent" />
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-3xl py-24 lg:py-32">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col items-start"
+          >
+            {/* Logo */}
+            <img
+              src={logoImg}
+              alt="Noble Clinic"
+              className="h-14 sm:h-16 lg:h-20 w-auto object-contain mb-8"
+              fetchPriority="high"
+            />
+
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="inline-flex items-center gap-2 bg-noir-soft/80 backdrop-blur-md border border-gold/40 rounded-full px-4 py-1.5 mb-6 shadow-lg"
+            >
+              <Diamond className="w-3.5 h-3.5 text-gold" />
+              <span className="text-[10px] sm:text-xs font-body font-bold text-foreground tracking-[0.25em] uppercase">
+                Odontologia Especializada · Fortaleza
+              </span>
+            </motion.div>
+
+            {/* Headline — ICP-focused: speaks to years of suffering */}
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] text-foreground mb-6">
+              Cansou de se adaptar? <br />
+              <span className="text-gold italic">Aqui começa a sua mudança.</span>
+            </h1>
+
+            {/* Subheadline — Empathy + Transformation */}
+            <p className="font-body text-base sm:text-lg lg:text-xl text-foreground/75 mb-10 max-w-xl leading-relaxed">
+              Se você convive há anos com próteses que não servem mais, com vergonha de sorrir ou com medo de começar — saiba que esse incômodo tem solução. E ela é definitiva.
+            </p>
+
+            {/* CTAs — "Me chama" as primary CTA */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <motion.a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.97 }}
+                onClick={trackClick}
+                className="btn-gold text-sm sm:text-base px-8 py-4 sm:px-10 sm:py-5 rounded-full font-bold inline-block shadow-[0_15px_40px_hsl(var(--gold)/0.3)] tracking-wider uppercase text-center"
+              >
+                Me Chama no WhatsApp
+              </motion.a>
+
+              <a
+                href="#especialidades"
+                className="btn-gold-outline text-sm sm:text-base px-8 py-4 sm:px-10 sm:py-5 rounded-full inline-block tracking-wider uppercase text-center"
+              >
+                Conhecer a Clínica
+              </a>
+            </div>
+
+            {/* Trust mini-row */}
+            <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-foreground/60 font-body text-[11px] uppercase tracking-[0.25em]">
+              <span>Implantes</span>
+              <span className="w-1 h-1 rounded-full bg-gold/50" />
+              <span>Reabilitação Oral</span>
+              <span className="w-1 h-1 rounded-full bg-gold/50" />
+              <span>Estética</span>
+              <span className="w-1 h-1 rounded-full bg-gold/50" />
+              <span>HOF</span>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, y: [0, 8, 0] }}
+        transition={{ delay: 1.2, y: { repeat: Infinity, duration: 2 } }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-gold/60 z-10"
+      >
+        <ChevronDown className="w-6 h-6" />
+      </motion.div>
+    </section>
+  )
+}

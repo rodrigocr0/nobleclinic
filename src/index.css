@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Noble Clinic — Premium Black + Gold
+  All colors must be HSL.
+*/
+
+:root {
+  --background: 0 0% 4%;            /* near-black canvas */
+  --foreground: 36 30% 95%;         /* warm off-white */
+  --card: 0 0% 7%;
+  --card-foreground: 36 30% 95%;
+  --popover: 0 0% 7%;
+  --popover-foreground: 36 30% 95%;
+  --primary: 42 55% 52%;            /* gold */
+  --primary-foreground: 0 0% 6%;
+  --secondary: 0 0% 10%;
+  --secondary-foreground: 36 20% 90%;
+  --muted: 0 0% 12%;
+  --muted-foreground: 36 12% 65%;
+  --accent: 42 55% 52%;
+  --accent-foreground: 0 0% 6%;
+  --destructive: 0 75% 55%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 42 25% 22%;             /* dark gold border */
+  --input: 0 0% 14%;
+  --ring: 42 55% 52%;
+  --radius: 0.625rem;
+
+  --gold: 42 55% 52%;               /* #C9A24A-ish */
+  --gold-light: 44 70% 70%;
+  --gold-dark: 38 60% 38%;
+  --beige: 36 25% 88%;
+  --beige-dark: 36 15% 70%;
+  --cream: 36 20% 95%;
+  --noir: 0 0% 4%;
+  --noir-soft: 0 0% 8%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gold gradient button */
+.btn-gold {
+  background: linear-gradient(135deg, hsl(var(--gold-dark)) 0%, hsl(var(--gold)) 50%, hsl(var(--gold-dark)) 100%);
+  color: hsl(0 0% 6%);
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px hsl(var(--gold) / 0.4);
+  text-shadow: 0 1px 2px hsl(0 0% 0% / 0.15);
+}
+
+.btn-gold:hover {
+  box-shadow: 0 6px 25px hsl(var(--gold) / 0.55);
+  transform: translateY(-2px);
+}
+
+/* Outline gold for secondary actions on dark */
+.btn-gold-outline {
+  background: transparent;
+  border: 1px solid hsl(var(--gold) / 0.6);
+  color: hsl(var(--gold));
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-gold-outline:hover {
+  background: hsl(var(--gold) / 0.1);
+  border-color: hsl(var(--gold));
+}
+
+/* Green WhatsApp gradient */
+.btn-green {
+  background: linear-gradient(135deg, hsl(150 80% 28%) 0%, hsl(150 70% 38%) 50%, hsl(150 80% 28%) 100%);
+  color: white;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px hsl(150 80% 28% / 0.4);
+}
+.btn-green:hover {
+  box-shadow: 0 6px 25px hsl(150 80% 28% / 0.6);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+
+/* Clean dark scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: hsl(var(--background)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
