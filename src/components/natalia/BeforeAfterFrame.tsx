@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronsLeftRight } from 'lucide-react'
-import antesImg from '../../assets/antes-hero-webp.webp'
-import depoisImg from '../../assets/depois-hero-webp.webp'
+import antesImg from '../../assets/antes-webp.webp'
+import depoisImg from '../../assets/depois-webp.webp'
 
 export function BeforeAfterFrame() {
   const [position, setPosition] = useState(50)
