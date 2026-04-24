@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Instagram } from 'lucide-react'
-import drJoaoImg from '../../assets/dr-joao.jpg'
-import draThaynaraImg from '../../assets/dra-thaynara.jpg'
+import drJoaoImg from '../../assets/foto-joao-webp.webp'
+import draThaynaraImg from '../../assets/foto-thaynara-webp.webp'
 import { INSTAGRAM_DR_JOAO, INSTAGRAM_DRA_THAYNARA } from '../../lib/contact'
 
 const team = [
