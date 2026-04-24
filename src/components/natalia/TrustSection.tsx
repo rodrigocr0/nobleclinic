@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Award, ShieldCheck, Users, Clock } from 'lucide-react'
-import smileImg from '../../assets/noble-smile.jpg'
+import smileImg from '../../assets/paciente-webp.webp'
 
 const stats = [
   { icon: Users, label: 'Vidas transformadas', value: '+500' },
