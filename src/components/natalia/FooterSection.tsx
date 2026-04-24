@@ -107,9 +107,11 @@ export function FooterSection() {
               <div>
                 <h4 className="font-display font-medium text-lg mb-1 tracking-tight">Noble Clinic</h4>
                 <p className="font-body text-foreground/50 leading-relaxed text-sm">
-                  Fortaleza · Ceará · Brasil
+                  Palladium Business Center, Sala 807
                   <br />
-                  Endereço completo enviado no agendamento.
+                  Av. Des. Moreira — Meireles
+                  <br />
+                  Fortaleza - CE, 60125-160
                 </p>
               </div>
             </div>
