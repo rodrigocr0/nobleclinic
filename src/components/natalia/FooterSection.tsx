@@ -93,7 +93,7 @@ export function FooterSection() {
             <div className="w-full aspect-video rounded-3xl overflow-hidden border border-gold/15 shadow-2xl mb-8">
               <iframe
                 title="Localização Noble Clinic"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4!2d-38.4912!3d-3.7335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2sFortaleza%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1711200000000"
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=pt-BR&q=Palladium%20Business%20Center,%20Av.%20Des.%20Moreira,%20Fortaleza&t=&z=17&ie=UTF8&iwloc=B&output=embed"
                 className="w-full h-full border-0 grayscale-[40%]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
