@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
+import AutoScroll from 'embla-carousel-auto-scroll'
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal } from 'lucide-react'
 import logoInsta from '../../assets/carousel/logo-instagram.webp'
 
@@ -54,8 +54,9 @@ export function InstagramCarousel() {
       dragFree: true,
     },
     [
-      Autoplay({
-        delay: 3000,
+      AutoScroll({
+        playOnInit: true,
+        speed: 1,
         stopOnInteraction: false,
         stopOnMouseEnter: true,
       }),
