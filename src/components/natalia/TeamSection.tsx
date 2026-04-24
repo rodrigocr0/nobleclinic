@@ -60,23 +60,23 @@ export function TeamSection() {
                   width={800}
                   height={1024}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-noir via-noir/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
 
                 <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-                  <p className="text-gold font-body text-[10px] uppercase tracking-[0.3em] font-bold mb-2">
+                  <p className="text-gold font-body text-[10px] uppercase tracking-[0.3em] font-bold mb-2 drop-shadow-md">
                     {member.role}
                   </p>
-                  <h3 className="font-display text-2xl sm:text-3xl font-bold text-foreground mb-3 leading-tight">
+                  <h3 className="font-display text-2xl sm:text-3xl font-bold text-white mb-3 leading-tight drop-shadow-lg">
                     {member.name}
                   </h3>
-                  <p className="font-body text-sm sm:text-base text-foreground/75 leading-relaxed mb-4">
+                  <p className="font-body text-sm sm:text-base text-white/90 leading-relaxed mb-4 drop-shadow-md">
                     {member.bio}
                   </p>
                   <a
                     href={member.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-foreground/80 hover:text-gold transition-colors text-xs font-body uppercase tracking-widest"
+                    className="inline-flex items-center gap-2 text-white hover:text-gold transition-colors text-xs font-body uppercase tracking-widest drop-shadow-md"
                   >
                     <Instagram className="w-4 h-4" /> {member.handle}
                   </a>
