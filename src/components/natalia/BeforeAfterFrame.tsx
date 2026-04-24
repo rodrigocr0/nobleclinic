@@ -21,8 +21,8 @@ export function BeforeAfterFrame() {
       if (!startTime) startTime = timestamp
       const progress = timestamp - startTime
       
-      // Calculate sine wave movement between 20% and 80%
-      const newPos = 50 + Math.sin((progress / duration) * Math.PI * 2) * 30
+      // Calculate sine wave movement between 0% and 100% to show the full images
+      const newPos = 50 + Math.sin((progress / duration) * Math.PI * 2) * 50
       setPosition(newPos)
 
       animationFrameId = requestAnimationFrame(animate)
