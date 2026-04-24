@@ -60,7 +60,8 @@ export function TeamSection() {
                   width={800}
                   height={1024}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+                {/* Gradient tweaked for perfect balance: very dark at the text (bottom), quickly fading to transparent to show faces */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 from-0% via-black/40 via-40% to-transparent to-70%" />
 
                 <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
                   <p className="text-gold font-body text-[10px] uppercase tracking-[0.3em] font-bold mb-2 drop-shadow-md">
