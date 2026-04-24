@@ -3,7 +3,7 @@ import { Award, ShieldCheck, Users, Clock } from 'lucide-react'
 import smileImg from '../../assets/paciente-webp.webp'
 
 const stats = [
-  { icon: Users, label: 'Vidas transformadas', value: '+500' },
+  { icon: Users, label: 'Vidas transformadas', value: '+2000' },
   { icon: Award, label: 'Anos de excelência', value: '10+' },
   { icon: ShieldCheck, label: 'Casos complexos resolvidos', value: '100%' },
   { icon: Clock, label: 'Acompanhamento pessoal', value: '1:1' },
@@ -19,7 +19,7 @@ export function TrustSection() {
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative max-w-md mx-auto lg:mx-0"
+            className="relative max-w-md mx-auto"
           >
             <div className="relative rounded-2xl overflow-hidden border border-gold/20 shadow-[0_25px_60px_rgba(0,0,0,0.6)]">
               <img
