@@ -109,6 +109,17 @@ html {
 }
 .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
 
+/* Custom text shadow utilities for premium readability */
+.text-shadow-sm {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+.text-shadow-md {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.95);
+}
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.95), 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 /* Clean dark scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: hsl(var(--background)); }

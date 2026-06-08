@@ -16,10 +16,10 @@ export function TrustSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: Image */}
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative max-w-md mx-auto"
+            className="relative w-full max-w-md mx-auto justify-self-center"
           >
             <div className="relative rounded-2xl overflow-hidden border border-gold/20 shadow-[0_25px_60px_rgba(0,0,0,0.6)]">
               <img

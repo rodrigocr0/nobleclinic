@@ -61,6 +61,16 @@ export function HeroSection() {
               <span className="block text-gold italic whitespace-nowrap mt-1">Isso muda aqui.</span>
             </h1>
 
+            {/* Before/After frame for mobile (between headline and subheadline) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="w-full max-w-[280px] sm:max-w-[320px] mx-auto mt-4 mb-6 lg:hidden"
+            >
+              <BeforeAfterFrame />
+            </motion.div>
+
             {/* Subheadline */}
             <p className="font-body text-sm sm:text-base lg:text-[15px] xl:text-base text-foreground/75 mb-6 max-w-lg leading-relaxed">
               Se você convive há anos com próteses que não servem mais, com vergonha de sorrir ou com medo de começar, saiba que esse incômodo tem solução definitiva. Implante é decisão de vida. Aqui você está no lugar certo.
@@ -105,7 +115,7 @@ export function HeroSection() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] xl:max-w-[420px] mx-auto mt-6 lg:mt-0"
+            className="w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] xl:max-w-[420px] mx-auto mt-6 lg:mt-0 hidden lg:block"
           >
             <BeforeAfterFrame />
           </motion.div>
