@@ -107,11 +107,11 @@ export function FooterSection() {
               <div>
                 <h4 className="font-display font-medium text-lg mb-1 tracking-tight">Noble Clinic</h4>
                 <p className="font-body text-foreground/50 leading-relaxed text-sm">
-                  Palladium Business Center, Sala 807
+                  UNO Medical & Office, Sala 706B
                   <br />
-                  Av. Des. Moreira — Meireles
+                  Av. Pontes Vieira, 2340 — Dionísio Torres
                   <br />
-                  Fortaleza - CE, 60125-160
+                  Fortaleza - CE, 60135-238
                 </p>
               </div>
             </div>
